@@ -69,16 +69,16 @@ input[class^="btn-"]:hover {
 // Padding
 .py {
   &-1 {
-    padding: 1rem 0rem;
-  }
-  &-2 {
     padding: 2rem 0rem;
   }
-  &-3 {
+  &-2 {
     padding: 3rem 0rem;
   }
-  &-4 {
+  &-3 {
     padding: 4rem 0rem;
+  }
+  &-4 {
+    padding: 5rem 0rem;
   }
 }
 // margin

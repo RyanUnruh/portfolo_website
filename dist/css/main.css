@@ -53,16 +53,16 @@ input[class^="btn-"]:hover {
   text-align: center; }
 
 .py-1 {
-  padding: 1rem 0rem; }
-
-.py-2 {
   padding: 2rem 0rem; }
 
-.py-3 {
+.py-2 {
   padding: 3rem 0rem; }
 
-.py-4 {
+.py-3 {
   padding: 4rem 0rem; }
+
+.py-4 {
+  padding: 5rem 0rem; }
 
 .my-1 {
   margin: 1rem 0rem; }
@@ -94,7 +94,8 @@ input[class^="btn-"]:hover {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  grid-gap: 1rem; }
 
 .item {
   position: relative;
@@ -189,10 +190,8 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  text-transform: uppercase; }
+  width: 50px;
+  height: 50px; }
 
 #main-nav {
   display: flex;
@@ -215,7 +214,7 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/image1.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -226,7 +225,7 @@ img {
     line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/image1.jpg") no-repeat 20% 30%/cover;
   height: 100vh;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
@@ -302,9 +301,11 @@ img {
   text-align: center; }
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+  border-radius: 50%; }
 
 #about-a .bio {
+  text-align: left;
   grid-area: bio;
   border-left: 3px solid #ffbc00;
   padding: 0.8rem; }
@@ -341,7 +342,9 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
   #about-c .about-logos img {
-    width: 70%; }
+    width: 60%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1); }
 
 #about-d .testimonials {
   display: grid;

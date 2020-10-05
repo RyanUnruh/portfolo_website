@@ -16,10 +16,11 @@
     <title>Ryan Unruh | Developer</title>
   </head>
   <body>
+  
     <header id="header-home">
       <div class="container">
         <nav id="main-nav">
-          <img src="img/logo.png" alt="My Portfolio" id="logo" />
+          <a href="#work-a"> <img src="img/logo.png" alt="My Portfolio" id="logo" /></a>
           <ul>
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -29,24 +30,121 @@
         </nav>
         <div class="header-content">
           <h1>
-            I am Ryan The
-            <span
-              class="txt-type"
-              data-wait="3000"
-              data-words='["Developer", "Designer", "UX/UI Dev"]'
-            ></span>
+            My name is Ryan Unruh & <br />I'm a software
+            developer.
           </h1>
-          <p class="lead">
-            I'm a Front End Software Developer with a focus on React<br> & Responsive web
-            design.
-          </p>
-          <a href="work.html" class="btn-light">View my work</a>
+          <!-- <p class="lead">
+            I'm a Front End Software Developer with a focus on React<br />
+            & Responsive web design.
+          </p> -->
+          <!-- <a href="work.html" class="btn-light">View my work</a> -->
         </div>
       </div>
     </header>
 
+    <!-- Section A; info -->
+    <section id='about-a' class="text-center bg-dark py-3">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">Let me tell you a little about myself and what I do.</p>
+        <div class="about-info">
+          <img src="img/about.jpg" alt="" class="bio-image">
+          <div class="bio">
+            <h4>Your project is in safe hands</h4>
+            <p>To help you get to know me fast- here are a few fun facts to kick start our relationshhip. Before persuing a career in software development I was a freelance Photographer & Director. I've lived in New York City for 7 years. I've traveled to 17 countries and have met so many amazing people. About 2 years ago I startted playing around with HTML and CSS and quikly realized how much I enjoy developing. After a year of dabbeling I decided to persue learning full time by enrolling in a 3 month Software engineering bootcamp. During boot camp I learned full stack JavaScript. <br><br>
+            I am now in search of a company to contribute my learned skills to. I'm highly motivated, creative, and passionate to learn and continue growing. I'm looking for a talented team of engineers to join who I can ask questions and learn best practaces from. <br><br>
+          Feel free to contact me if you think I would be a good fit in your company.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Section D: Testimonials -->
+<section id="about-d" class="py-4 bg-dark">
+  <div class="container">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="bottom-line"></div>
+    <p class="lead text-center">Take a look at what my clients say..</p>
+    <div class="testimonials">
+      <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, eius.</p>
+        <ul>
+          <li><img src="img/testimonials/person1.jpg" alt=""></li>
+          <li>name, location</li>
+        </ul>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, eius.</p>
+        <ul>
+          <li><img src="img/testimonials/person2.jpg" alt=""></li>
+          <li>name, location</li>
+        </ul>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, eius.</p>
+        <ul>
+          <li><img src="img/testimonials/person3.jpg" alt=""></li>
+          <li>name, location</li>
+        </ul>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, eius.</p>
+        <ul>
+          <li><img src="img/testimonials/person4.jpg" alt=""></li>
+          <li>name, location</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+
+   
+
+    <!-- Section C: Logos -->
+    <!-- <section id="about-c" class="py-4 bg-light">
+      <div class="container">
+        <div class="about-logos">
+          <img src="img/techIcons/iconfinder_code-programming-css-style-develop-layout-language_652584.png" alt="">
+          <img src="img//techIcons/iconfinder_code-programming-html-markup-develop-layout-language_652583.png" alt="">
+          <img src="img/techIcons/iconfinder_code-programming-javascript-software-develop-command-language_652581.png" alt="">
+          <img src="img/techIcons/iconfinder_react_1296845.png" alt="">
+        </div>
+      </div>
+    </section> -->
+     <!-- Section B: Progress bar -->
+     <section id="about-b" class="py-3 bg-dark">
+      <div class="container">
+        <h2 class="section-title">Tech Skills</h2>
+        <div class="bottom-line"></div>
+        <h4>HTML:</h4>
+        <div class="progress">
+          <div style='width: 65%'></div>
+        </div>
+        <h4>CSS:</h4>
+        <div class="progress">
+          <div style='width: 65%'></div>
+        </div>
+        <h4>JavaScript:</h4>
+        <div class="progress">
+          <div style='width: 55%'></div>
+        </div>
+        <h4>React:</h4>
+        <div class="progress">
+          <div style='width: 45%'></div>
+        </div>
+        <h4>Illustrator:</h4>
+        <div class="progress">
+          <div style='width: 75%'></div>
+        </div>
+        <h4>Photoshop:</h4>
+        <div class="progress">
+          <div style='width: 75%'></div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Section A: Specialize -->
-    <section id="home-a" class="text-center py-2">
+    <section id="home-a" class="text-center py-2 bg-dark">
       <div class="container">
         <h2 class="section-title">I specialize in</h2>
         <div class="bottom-line"></div>
@@ -56,27 +154,21 @@
             <i class="fas fa-desktop fa-2x"></i>
             <h3>Concepting</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              quidem commodi nesciunt culpa incidunt sit sequi, voluptate minus
-              quasi recusandae.
+             The creative process is where I thrive. I love brain storming and creating idea boards. I'm a "strong oppinions held lightly" knind of guy. 
             </p>
           </div>
           <div>
             <i class="fas fa-object-ungroup fa-2x"></i>
             <h3>Visual Design</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              quidem commodi nesciunt culpa incidunt sit sequi, voluptate minus
-              quasi recusandae.
+              From photography, creating posters in Illustrator, and building small UI applications- I have an eye for good design and take pleasure in arranging things to look beautiful to the eye.
             </p>
           </div>
           <div>
             <i class="fas fa-thumbs-up fa-2x"> </i>
             <h3>Interaction</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              quidem commodi nesciunt culpa incidunt sit sequi, voluptate minus
-              quasi recusandae.
+              From my freelance career I have always worked directly with the client. This has taught me to be very communitive and set clear expectations as well as stick to deadlines. 
             </p>
           </div>
         </div>
@@ -84,43 +176,117 @@
     </section>
 
     <!-- Section B: Stats -->
-    <section class="text-center py-2" id="home-b">
-      <div class="stats">
-        <div>
-          <ul>
-            <li><i class="fas fa-users fa-3x"></i></li>
-            <li class="stats-title">Clients</li>
-            <li class="stats-number">100</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><i class="fas fa-award fa-3x"></i></li>
-            <li class="stats-title">Awards</li>
-            <li class="stats-number">100</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-            <li class="stats-title">Hours worked</li>
-            <li class="stats-number">10,000</li>
-          </ul>
-        </div>
-
-        <div>
-          <ul>
-            <li><i class="fas fa-code-branch fa-3x"></i></li>
-            <li class="stats-title">Projects Completed</li>
-            <li class="stats-number">40</li>
-          </ul>
+    <section id="work-a" class="text-center py-4 bg-dark">
+      <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Check out some of my projects</p>
+        <div class="items">
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item1.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Design</p>
+                <h2 class="item-text-title">Great Gradients</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item2.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">UI/UX</p>
+                <h2 class="item-text-title">Great Gradients</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item3.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Photography & Design</p>
+                <h2 class="item-text-title">Vanashing</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item4.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Design</p>
+                <h2 class="item-text-title">Gap Inc</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item5.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Mobile UI Design</p>
+                <h2 class="item-text-title">Face the experiance</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item6.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Design Concept</p>
+                <h2 class="item-text-title">Bezier Curves</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item7.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Photography</p>
+                <h2 class="item-text-title">Dark Ponder</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item8.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Web App</p>
+                <h2 class="item-text-title">Restauraunt APP</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item9.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-catagory">Social Network Concept</p>
+                <h2 class="item-text-title">Friend feed</h2>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Section C: Process -->
-    <section class="text-center py-2" id="home-c">
+    <!-- Footer
+    Section C: Process -->
+    <!-- <section class="text-center py-2" id="home-c">
       <div class="container">
         <h2 class="section-title">My creative process</h2>
         <div class="bottom-line"></div>
@@ -129,61 +295,21 @@
           strongly designed components to build around.
         </p>
         <div class="process">
-          <div>
-            <i class="fas fa-file-alt fa-4x process-icon my-2">
-              <div class="process-step">1</div>
-            </i>
-            <h3>Discuss the project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              atque officia blanditiis corrupti, doloribus repudiandae.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-4x process-icon my-2">
-              <div class="process-step">2</div>
-            </i>
-            <h3>Brain storming & Consepting</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              atque officia blanditiis corrupti, doloribus repudiandae.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-              <div class="process-step">3</div>
-            </i>
-            <h3>UI/UX planning</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              atque officia blanditiis corrupti, doloribus repudiandae.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-              <div class="process-step">1</div>
-            </i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              atque officia blanditiis corrupti, doloribus repudiandae.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+         </div>
+    </section> -->
     <!-- Footer -->
     <footer id="main-footer">
       <div class="footer-content container">
         <p>Copyright &copy; All Rights Reserved</p>
         <div class="social">
-          <i class="fab fa-instagram"></i>
+         
+          <i class="fab fa-instagram"></i> 
           <i class="fab fa-linkedin"></i>
           <i class="fab fa-github"></i>
         </div>
       </div>
     </footer>
     <!-- JS -->
-    <script src="js/typewriter.js"></script>
+    <!-- <script src="js/typewriter.js"></script> -->
   </body>
 </html>

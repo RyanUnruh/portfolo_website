@@ -2,10 +2,11 @@
 
 $website-width: 1280px;
 $main-color: #ffbc00;
+$myMain-color: #00AEEF;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
-$bg-image: url("../img/showcase.jpg");
+$bg-image: url("../img/image1.jpg");
 
 @function set-text-color($color) {
   @if (lightness($color) > 50) {
