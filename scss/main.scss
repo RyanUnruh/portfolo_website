@@ -2,6 +2,63 @@
 @import "utilities";
 @import "item_grid";
 
+// Paralax
+
+.pimg1 {
+  background-image: url("../img/image1.jpg");
+
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.pimg3 {
+  background-image: url("../img/image3.jpg");
+  min-height: 300px;
+}
+
+.pimg1,
+.pimg3 {
+  position: relative;
+  /* opacity: .5; */
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // Added
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+.nav {
+  display: flex;
+  position: absolute;
+  padding-top: 1%;
+  padding-left: 10%;
+  height: 100px;
+  width: 100px;
+}
+.nav h1 {
+  line-height: 1.2;
+  list-style: none;
+
+  color: #fff;
+}
+
+.ptext {
+  position: absolute;
+  padding-top: 25%;
+  padding-left: 10%;
+  width: 80%;
+  z-index: 2;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
 // General Styles
 
 * {
@@ -10,7 +67,7 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Aller", sans-serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -70,21 +127,30 @@ img {
     }
   }
 }
+
+.lead {
+  padding-bottom: 2rem;
+}
+
+.mainChar {
+  color: $main-color;
+}
 // Header
 #header {
   &-home {
-    background: $bg-image no-repeat center right / cover;
+    // background: $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
 
     // Header Content
     .header-content {
-      text-align: center;
+      align-items: left;
       padding-top: 20%;
-    }
-    h1 {
-      font-size: 4rem;
-      line-height: 1.2;
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+        text-align: center;
+      }
     }
   }
   // Header inner
@@ -194,6 +260,7 @@ img {
 #about {
   // About A
   &-a {
+    height: 70vh;
     .about-info {
       display: grid;
       grid-template-areas:
@@ -267,6 +334,8 @@ img {
   }
   // D Section
   &-d {
+    height:30vh;
+    background-color:rgb(96, 197, 237);
     .testimonials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -295,51 +364,36 @@ img {
 // Contact page
 #contact {
   &-a {
-    .text-fields {
-      display: grid;
-      grid-template-areas:
-        "name email"
-        "subject phone"
-        "message message";
-      grid-gap: 1.2rem;
-      margin-bottom: 1.2rem;
-      // Grid Areas
-      .name-input {
-        grid-area: name;
-      }
-      .subject-input {
-        grid-area: subject;
-      }
-      .email-input {
-        grid-area: email;
-      }
-      .phone-input {
-        grid-area: phone;
-      }
-      .message-input {
-        grid-area: message;
-        height: 100px;
-      }
-      .text-input {
-        padding: 0.5rem 1rem;
-      }
-    }
-    button[type="submit"] {
-      width: 50%;
-    }
-  }
-  &-b {
+    
     .contact-info {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       text-align: center;
+      .go {
+        font-size: 4rem;
+        align-items: left;
+
+        a {
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
     }
   }
-  &-c {
-    h1 {
-      text-align: center;
-      font-size: 4rem;
-    }
+
+  .ptext2 {
+    position: absolute;
+
+    top: 35%;
+
+    width: 100%;
+    z-index: 2;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
 }
 
@@ -351,21 +405,22 @@ img {
 
   .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 5rem;
     align-items: center;
 
     .social .fab {
+      color: #fff;
       margin-right: 1rem;
-      border: 2px #fff solid;
-      border-radius: 50%;
-      height: 20px;
-      width: 20px;
+      // border: 2px #fff solid;
+      // border-radius: 50%;
+      // height: 20px;
+      // width: 20px;
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
       &:hover {
-        background: $main-color;
+        color: $main-color;
       }
     }
   }
