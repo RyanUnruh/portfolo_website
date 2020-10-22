@@ -82,6 +82,12 @@
   // contact
   #contact {
     &-a {
+      contact-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
       .text-fields {
         grid-template-areas:
           "name"
