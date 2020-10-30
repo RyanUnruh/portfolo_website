@@ -65,7 +65,7 @@
 body {
   font-family: "Aller", sans-serif;
   line-height: 1.6;
-  background: #fff;
+  background: #141414;
 }
 
 a {
@@ -279,60 +279,14 @@ img {
     }
   }
 
-  &-c {
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1.5rem;
-      text-align: center;
-
-      &-step {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 28px;
-        background: $main-color;
-        color: set-text-color($main-color);
-        border-radius: 50%;
-        height: 15px;
-        width: 15px;
-        line-height: 15px;
-        padding: 1rem;
-        transition: all 1s;
-      }
-      &-icon {
-        border-radius: 50%;
-        background: $dark-color;
-        color: set-text-color($dark-color);
-        padding: 2rem;
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        text-align: center;
-        position: relative;
-        transition: all 1s;
-
-        &:hover {
-          background: $main-color;
-          width: 90px;
-          height: 90px;
-          line-height: 90px;
-
-          .process-step {
-            background: $dark-color;
-            color: set-text-color($dark-color);
-          }
-        }
-      }
-    }
-  }
+  
 }
 
 // About sections
 #about {
   // About A
   &-a {
-    height: 70vh;
+    height: 100%;
     .about-info {
       display: grid;
       grid-template-areas: "bioimage bio bio";
@@ -390,28 +344,14 @@ img {
     }
   }
 
-  // About-C
-  &-c {
-    .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-
-      img {
-        width: 60%;
-        filter: grayscale(1);
-        -webkit-filter: grayscale(1);
-      }
-    }
-  }
   // D Section
   &-d {
-    height: 30vh;
+    height: 100%;
     // background-color: rgb(96, 197, 237);
     background-color: #4d9de3;
     .testimonials {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 0.5rem;
       ul {
         list-style: none;
@@ -436,36 +376,33 @@ img {
 
 // Contact page
 #contact {
+  height: 10%;
   &-a {
     .contact-info {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       text-align: center;
+      position: absolute;
+      top: 35%;
+      width: 100%;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+      .ask {
+        color: #141414;
+      }
       .go {
         font-size: 4rem;
         align-items: left;
 
         a {
+          color: #141414;
           &:hover {
             color: $main-color;
           }
         }
       }
     }
-  }
-
-  .ptext2 {
-    position: absolute;
-
-    top: 35%;
-
-    width: 100%;
-    z-index: 2;
-    color: black;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-bottom: 15px;
   }
 }
 

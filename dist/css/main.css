@@ -217,7 +217,7 @@ input[class^="btn-"]:hover {
 body {
   font-family: "Aller", sans-serif;
   line-height: 1.6;
-  background: #fff; }
+  background: #141414; }
 
 a {
   text-decoration: none;
@@ -356,46 +356,8 @@ img {
     #home-b .stats div:nth-child(even) {
       background: #ccc; }
 
-#home-c .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  text-align: center; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    background: #ffbc00;
-    color: #fff;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-    padding: 1rem;
-    transition: all 1s; }
-  #home-c .process-icon {
-    border-radius: 50%;
-    background: #141414;
-    color: #fff;
-    padding: 2rem;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    position: relative;
-    transition: all 1s; }
-    #home-c .process-icon:hover {
-      background: #ffbc00;
-      width: 90px;
-      height: 90px;
-      line-height: 90px; }
-      #home-c .process-icon:hover .process-step {
-        background: #141414;
-        color: #fff; }
-
 #about-a {
-  height: 70vh; }
+  height: 100%; }
   #about-a .about-info {
     display: grid;
     grid-template-areas: "bioimage bio bio";
@@ -435,21 +397,12 @@ img {
     text-align: center;
     background: #ffbc00; }
 
-#about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-  #about-c .about-logos img {
-    width: 60%;
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1); }
-
 #about-d {
-  height: 30vh;
+  height: 100%;
   background-color: #4d9de3; }
   #about-d .testimonials {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem; }
     #about-d .testimonials ul {
       list-style: none;
@@ -466,26 +419,27 @@ img {
       border-radius: 50%;
       margin-right: 0.5rem; }
 
-#contact-a .contact-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center; }
-  #contact-a .contact-info .go {
-    font-size: 4rem;
-    align-items: left; }
-    #contact-a .contact-info .go a:hover {
-      color: #ffbc00; }
-
-#contact .ptext2 {
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  z-index: 2;
-  color: black;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.2;
-  margin-bottom: 15px; }
+#contact {
+  height: 10%; }
+  #contact-a .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 15px; }
+    #contact-a .contact-info .ask {
+      color: #141414; }
+    #contact-a .contact-info .go {
+      font-size: 4rem;
+      align-items: left; }
+      #contact-a .contact-info .go a {
+        color: #141414; }
+        #contact-a .contact-info .go a:hover {
+          color: #ffbc00; }
 
 #main-footer {
   background: #141414;
