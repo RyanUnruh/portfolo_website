@@ -2,13 +2,11 @@
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  grid-gap: 2rem;
-  width: 80%;
-  padding-left: 8rem;
+  grid-gap: 1rem;
+  padding: 0 10rem;
 
   .item {
-    justify-items: center;
+    box-shadow: 0 5px 10px 0 rgGrid size edit to work pageba(0, 0, 0, 0.3);
     position: relative;
     background: rgb(42, 172, 252);
     overflow: hidden;
