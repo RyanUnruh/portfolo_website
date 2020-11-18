@@ -687,7 +687,8 @@ img {
       padding-top: 1rem;
       color: #141414; }
     #contact-info .go {
-      font-size: 4rem; }
+      font-size: 4rem;
+      padding-right: 7rem; }
       #contact-info .go a {
         color: #141414; }
         #contact-info .go a:hover {
