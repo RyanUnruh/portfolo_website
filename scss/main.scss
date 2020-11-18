@@ -412,9 +412,10 @@ img {
 
   // D Section
   &-d {
-    height: 100%;
+    height: 70vh;
     // background-color: rgb(96, 197, 237);
-    background-color: #4d9de3;
+    background-color: #0c95ed;
+
     .testimonials {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

@@ -430,8 +430,8 @@ img {
     background: #ffbc00; }
 
 #about-d {
-  height: 100%;
-  background-color: #4d9de3; }
+  height: 70vh;
+  background-color: #0c95ed; }
   #about-d .testimonials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
