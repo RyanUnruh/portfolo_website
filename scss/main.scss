@@ -312,7 +312,7 @@ img {
 #about {
   // About A
   &-a {
-    height: 100vh;
+    height: 80vh;
 
     .about-info {
       display: grid;
@@ -332,6 +332,7 @@ img {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+      padding-top: 5em;
     }
 
     .award-1 {
