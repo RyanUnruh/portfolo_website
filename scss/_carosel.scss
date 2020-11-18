@@ -1,0 +1,302 @@
+/* MODAL (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  //   background-color: #fefefe;
+  margin: auto;
+  padding-top: 10rem;
+  padding-right: 30rem;
+  max-width: 1200px;
+}
+
+// CAROSEL
+.carousel-wrapper {
+  position: absolute;
+  height: 400px;
+  width: 600px;
+  padding-right: 10rem;
+}
+// margin: 0 auto;
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow1 {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .arrow1,
+  .light .arrow1 {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+
+/*Select every element*/
+[id^="item"] {
+  display: none;
+}
+
+// IMG
+
+// Film
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../img/work/photoSite/1.png");
+  background-size: cover;
+}
+.item-2 {
+  background: url("../img/work/photoSite/2.png");
+  background-size: cover;
+}
+.item-3 {
+  background: url("../img/work/photoSite/3.png");
+  background-size: cover;
+}
+.item-4 {
+  background: url("../img/work/photoSite/4.png");
+  background-size: cover;
+}
+.item-5 {
+  background: url("../img/work/photoSite/5.png");
+  background-size: cover;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4,
+#item-5:target ~ .item-5 {
+  z-index: 3;
+  opacity: 1;
+}
+
+// Monsters
+.Mitem-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../img/work/monsters/1.png");
+  background-size: cover;
+}
+.Mitem-2 {
+  background: url("../img/work/monsters/2.png");
+  background-size: cover;
+}
+
+*:target ~ .Mitem-1 {
+  opacity: 0;
+}
+
+#Mitem-1:target ~ .Mitem-1 {
+  opacity: 1;
+}
+
+#Mitem-2:target ~ .Mitem-2 {
+  z-index: 3;
+  opacity: 1;
+}
+
+// Calorie
+.Citem-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../img/work/calorie/1.png");
+  background-size: cover;
+}
+.Citem-2 {
+  background: url("../img/work/calorie/2.png");
+  background-size: cover;
+}
+.Citem-3 {
+  background: url("../img/work/calorie/3.png");
+  background-size: cover;
+}
+.Citem-4 {
+  background: url("../img/work/calorie/4.png");
+  background-size: cover;
+}
+
+*:target ~ .Citem-1 {
+  opacity: 0;
+}
+
+#Citem-1:target ~ .Citem-1 {
+  opacity: 1;
+}
+
+#Citem-2:target ~ .Citem-2,
+#Citem-3:target ~ .Citem-3,
+#Citem-4:target ~ .Citem-4 {
+  z-index: 3;
+  opacity: 1;
+}
+
+// Github
+.Gitem-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../img/work/github/1.png");
+  background-size: cover;
+}
+.Gitem-2 {
+  background: url("../img/work/github/2.png");
+  background-size: cover;
+}
+.Gitem-3 {
+  background: url("../img/work/github/3.png");
+  background-size: cover;
+}
+
+*:target ~ .Gitem-1 {
+  opacity: 0;
+}
+
+#Gitem-1:target ~ .Gitem-1 {
+  opacity: 1;
+}
+
+#Gitem-2:target ~ .Gitem-2,
+#Gitem-3:target ~ .Gitem-3 {
+  z-index: 3;
+  opacity: 1;
+}
+// Chuck
+.CNitem-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../img/work/chuckNoris/1.png");
+  background-size: cover;
+}
+.CNitem-2 {
+  background: url("../img/work/chuckNoris/2.png");
+  background-size: cover;
+}
+.CNitem-3 {
+  background: url("../img/work/chuckNoris/3.png");
+  background-size: cover;
+}
+
+*:target ~ .CNitem-1 {
+  opacity: 0;
+}
+
+#CNitem-1:target ~ .CNitem-1 {
+  opacity: 1;
+}
+
+#CNitem-2:target ~ .CNitem-2,
+#CNitem-3:target ~ .CNitem-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+//TicTac
+.Titem-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../img/work/tictac/1.png");
+  background-size: cover;
+}
+.Titem-2 {
+  background: url("../img/work/tictac/2.png");
+  background-size: cover;
+}
+.Titem-3 {
+  background: url("../img/work/tictac/3.png");
+  background-size: cover;
+}
+
+*:target ~ .Titem-1 {
+  opacity: 0;
+}
+
+#Titem-1:target ~ .Titem-1 {
+  opacity: 1;
+}
+
+#Titem-2:target ~ .Titem-2,
+#Titem-3:target ~ .Titem-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+// Text box
+
+.projInfo {
+  position: absolute;
+  display: flex;
+  text-align: left;
+
+  padding-left: 45rem;
+  padding-top: 8rem;
+}
+.projInfo p {
+  padding-bottom: 2rem;
+}

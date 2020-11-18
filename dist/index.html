@@ -171,7 +171,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco.
               </p>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -256,12 +256,12 @@
     <section id="work-a" class="text-center py-4 bg-dark">
       <div class="container">
         <h2 class="section-title">WORK <span class='mainChar'>_</span></h2>
-        <button onclick="openModal();currentSlide(1)" class="btn">Click
+        
         </button>
        
         <p class="lead">Check out some of my projects</p>
         <div class="items">
-          <div class="item">
+          <div onclick="openModal();currentSlide(1)" class="item">
             <div class="item-image">
               <img src="img/items/item1.png" alt="" />
             </div>
@@ -272,9 +272,10 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          
+          <div onclick="openModal2();currentSlide(1)"class="item">
             <div class="item-image">
-              <img src="img/items/item2.png" alt="" />
+              <img src="img/work/monsters/1.png" alt="" />
             </div>
             <div class="item-text">
               <div class="item-text-wrap">
@@ -283,9 +284,9 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div onclick="openModal3();currentSlide(1)" class="item">
             <div class="item-image">
-              <img src="img/items/item3.png" alt="" />
+              <img src="img/work/calorie/3.png" alt="" />
             </div>
             <div class="item-text">
               <div class="item-text-wrap">
@@ -294,9 +295,9 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item" onclick="openModal4();currentSlide(1)">
             <div class="item-image">
-              <img src="img/items/item4.png" alt="" />
+              <img src="img/work/github/1.png" alt="" />
             </div>
             <div class="item-text">
               <div class="item-text-wrap">
@@ -305,29 +306,29 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item" onclick="openModal5();currentSlide(1)" >
             <div class="item-image">
-              <img src="img/items/item5.png" alt="" />
+              <img src="img/work/chuckNoris/2.png" alt="" />
             </div>
             <div class="item-text">
               <div class="item-text-wrap">
-                <p class="item-text-catagory">Mobile UI Design</p>
-                <h2 class="item-text-title">Face the experiance</h2>
+                <p class="item-text-catagory">JavaScript API Project</p>
+                <h2 class="item-text-title">Chuck Noris Joke Generator</h2>
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item" onclick="openModal6();currentSlide(1)">
             <div class="item-image">
-              <img src="img/items/item6.png" alt="" />
+              <img src="img/work/tictac/1.png" alt="" />
             </div>
             <div class="item-text">
               <div class="item-text-wrap">
-                <p class="item-text-catagory">Design Concept</p>
-                <h2 class="item-text-title">Bezier Curves</h2>
+                <p class="item-text-catagory">JavaScript</p>
+                <h2 class="item-text-title">TicTacToe</h2>
               </div>
             </div>
           </div>
-          <div class="item">
+          <!-- <div class="item">
             <div class="item-image">
               <img src="img/items/item7.png" alt="" />
             </div>
@@ -359,22 +360,277 @@
                 <h2 class="item-text-title">Friend feed</h2>
               </div>
             </div>
+          </div> -->
+        </div>
+
+        <!-- Modal 1 -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="carousel-wrapper">
+              <span id="item-1"></span>
+              <span id="item-2"></span>
+              <span id="item-3"></span>
+              <span id="item-4"></span>
+              <span id="item-5"></span>
+
+              <div class="carousel-item item-1">
+              
+                <a class="arrow1 arrow-prev" href="#item-3"></a>
+                <a class="arrow1 arrow-next" href="#item-2"></a>
+              </div>
+              
+              <div class="carousel-item item-2">
+                
+                <a class="arrow1 arrow-prev" href="#item-1"></a>
+                <a class="arrow1 arrow-next" href="#item-3"></a>
+              </div>
+              
+              <div class="carousel-item item-3">
+               
+                <a class="arrow1 arrow-prev" href="#item-2"></a>
+                <a class="arrow1 arrow-next" href="#item-4"></a>
+              </div>
+              <div class="carousel-item item-4">
+               
+                <a class="arrow1 arrow-prev" href="#item-3"></a>
+                <a class="arrow1 arrow-next" href="#item-5"></a>
+              </div>
+              <div class="carousel-item item-5">
+               
+                <a class="arrow1 arrow-prev" href="#item-4"></a>
+                <a class="arrow1 arrow-next" href="#item-1"></a>
+              </div>
+            
+            </div>
+
+            <div class="projInfo">
+              <div>
+                <p>This is my portfolio website designed to desplay my film and photography work from during my time as a flim maker. Although it was made before I learnd to code, it still worth sharing. Made with squarespace.</p>
+                <a href="http://www.unruhmedia.com/" target='blank'><button class="btn-main">WEBSITE</button></a>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-<!-- The Modal/Lightbox -->
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+        <!-- Modal 2 -->
+        <div id="myModal2" class="modal">
+          <span class="close cursor" onclick="closeModal2()">&times;</span>
+          <div class="modal-content">
 
-         
-          
-    
+            <div class="carousel-wrapper">
+              <span id="Mitem-1"></span>
+              <span id="Mitem-2"></span>
+              
 
-          
+              <div class="carousel-item Mitem-1">
+              
+                <a class="arrow1 arrow-prev" href="#Mitem-1"></a>
+                <a class="arrow1 arrow-next" href="#Mitem-2"></a>
+              </div>
+              
+              <div class="carousel-item Mitem-2">
+                
+                <a class="arrow1 arrow-prev" href="#Mitem-1"></a>
+                <a class="arrow1 arrow-next" href="#Mitem-1"></a>
+              </div>
+              
+            
+            
+            </div>
+
+            <div class="projInfo">
+              <div>
+                <p>This is a React project that fetches users from an API and displays their name and email.</p>
+                <a href="https://github.com/RyanUnruh/monsters-rolodex-React-" target='blank'><button class="btn-main">REPO</button></a>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+
+        <!-- Modal 3 -->
+        <div id="myModal3" class="modal">
+          <span class="close cursor" onclick="closeModal3()">&times;</span>
+          <div class="modal-content">
+
+            <div class="carousel-wrapper">
+              <span id="Citem-1"></span>
+              <span id="Citem-2"></span>
+              <span id="Citem-3"></span>
+              <span id="Citem-4"></span>
+              
+
+              <div class="carousel-item Citem-1">
+              
+                <a class="arrow1 arrow-prev" href="#Citem-4"></a>
+                <a class="arrow1 arrow-next" href="#Citem-2"></a>
+              </div>
+              
+              <div class="carousel-item Citem-2">
+                
+                <a class="arrow1 arrow-prev" href="#Citem-1"></a>
+                <a class="arrow1 arrow-next" href="#Citem-3"></a>
+              </div>
+              
+              <div class="carousel-item Citem-3">
+               
+                <a class="arrow1 arrow-prev" href="#Citem-2"></a>
+                <a class="arrow1 arrow-next" href="#Citem-4"></a>
+              </div>
+              <div class="carousel-item Citem-4">
+               
+                <a class="arrow1 arrow-prev" href="#Citem-3"></a>
+                <a class="arrow1 arrow-next" href="#Citem-1"></a>
+              </div>
+             
+            
+            </div>
+
+            <div class="projInfo">
+              <div>
+                <p>This is my portfolio website designed to desplay my film and photography work from during my time as a flim maker. Although it was made before I learnd to code, it still worth sharing. Made with squarespace.</p>
+                <a href="https://github.com/RyanUnruh/CalorieTracker-JS" target='blank'><button class="btn-main">REPO</button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div id="myModal4" class="modal">
+          <span class="close cursor" onclick="closeModal4()">&times;</span>
+          <div class="modal-content">
+
+            <div class="carousel-wrapper">
+              <span id="Gitem-1"></span>
+              <span id="Gitem-2"></span>
+              <span id="Gitem-3"></span>
+              
+              
+
+              <div class="carousel-item Gitem-1">
+              
+                <a class="arrow1 arrow-prev" href="#Gitem-3"></a>
+                <a class="arrow1 arrow-next" href="#Gitem-2"></a>
+              </div>
+              
+              <div class="carousel-item Gitem-2">
+                
+                <a class="arrow1 arrow-prev" href="#Gitem-1"></a>
+                <a class="arrow1 arrow-next" href="#Gitem-3"></a>
+              </div>
+              
+              <div class="carousel-item Gitem-3">
+               
+                <a class="arrow1 arrow-prev" href="#Gitem-2"></a>
+                <a class="arrow1 arrow-next" href="#Gitem-1"></a>
+              </div>
+          
+             
+            
+            </div>
+
+            <div class="projInfo">
+              <div>
+                <p>This is a Bootstrap 4 UI that connects to the Github API, using Async/ Await along with fetch API to access the user's Github account page along with a separate request to return users last 5 repositories. </p>
+                <a href="https://github.com/RyanUnruh/CalorieTracker-JS" target='blank'><button class="btn-main">REPO</button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Modal 5 -->
+        <div id="myModal5" class="modal">
+          <span class="close cursor" onclick="closeModal5()">&times;</span>
+          <div class="modal-content">
+
+            <div class="carousel-wrapper">
+              <span id="CNitem-1"></span>
+              <span id="CNitem-2"></span>
+              <span id="CNitem-3"></span>
+              
+              
+
+              <div class="carousel-item CNitem-1">
+              
+                <a class="arrow1 arrow-prev" href="#CNitem-3"></a>
+                <a class="arrow1 arrow-next" href="#CNitem-2"></a>
+              </div>
+              
+              <div class="carousel-item CNitem-2">
+                
+                <a class="arrow1 arrow-prev" href="#CNitem-1"></a>
+                <a class="arrow1 arrow-next" href="#CNitem-3"></a>
+              </div>
+              
+              <div class="carousel-item CNitem-3">
+               
+                <a class="arrow1 arrow-prev" href="#CNitem-2"></a>
+                <a class="arrow1 arrow-next" href="#CNitem-1"></a>
+              </div>
+          
+             
+            
+            </div>
+
+            <div class="projInfo">
+              <div>
+                <p>This is a Skeliton JS UI that connects to an API to return a number of random jokes</p>
+                <a href="https://github.com/RyanUnruh/ChuckNorris-API-JokeGenerator-JS" target='blank'><button class="btn-main">REPO</button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Modal 6 -->
+        <div id="myModal6" class="modal">
+          <span class="close cursor" onclick="closeModal6()">&times;</span>
+          <div class="modal-content">
+
+            <div class="carousel-wrapper">
+              <span id="Titem-1"></span>
+              <span id="Titem-2"></span>
+              <span id="Titem-3"></span>
+              
+              
+
+              <div class="carousel-item Titem-1">
+              
+                <a class="arrow1 arrow-prev" href="#Titem-3"></a>
+                <a class="arrow1 arrow-next" href="#Titem-2"></a>
+              </div>
+              
+              <div class="carousel-item Titem-2">
+                
+                <a class="arrow1 arrow-prev" href="#Titem-1"></a>
+                <a class="arrow1 arrow-next" href="#Titem-3"></a>
+              </div>
+              
+              <div class="carousel-item Titem-3">
+               
+                <a class="arrow1 arrow-prev" href="#Titem-2"></a>
+                <a class="arrow1 arrow-next" href="#Titem-1"></a>
+              </div>
+          
+             
+            
+            </div>
+
+            <div class="projInfo">
+              <div>
+                <p>This is one of my first projects that was so fun for me. It's made in pure JavaScript.</p>
+                <a href="https://github.com/RyanUnruh/JS-TicTacToe" target='blank'><button class="btn-main">REPO</button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+          
+        <!-- END -->
       </div>
-     
     </section>
     
      
