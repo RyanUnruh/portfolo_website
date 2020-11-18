@@ -3,7 +3,7 @@
 
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  padding: 0 10rem;
+  padding: 2rem 10rem;
 
   .item {
     box-shadow: 0 5px 10px 0 rgGrid size edit to work pageba(0, 0, 0, 0.3);
@@ -32,6 +32,9 @@
     // Scale image on hover
     &:hover &-image {
       transform: scale(1.2);
+    }
+    &:hover {
+      background: rgb(31, 31, 31);
     }
     // Bring in text on hover
     &:hover &-text {
@@ -66,14 +69,14 @@
       left: 0;
       bottom: 0;
       right: 0;
-      opacity: 0;
+      opacity: 1;
       text-align: center;
       z-index: 1;
       color: #fff;
-      transform: translateY(-20%);
-      transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
-        transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-      transition-delay: 300ms;
+      // transform: translateY(-20%);
+      // transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
+      //   transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+      // transition-delay: 300ms;
     }
 
     &-text-wrap {
