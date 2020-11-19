@@ -607,12 +607,12 @@ img {
       background: #ccc; }
 
 #about-a {
-  height: 100vh;
-  padding: 5rem 15rem 0rem 15rem; }
+  height: 100%;
+  padding: 5rem 15rem 20rem 15rem; }
   #about-a .about-info {
     display: grid;
     grid-template-areas: "bioimage bio bio";
-    padding-top: 2rem;
+    padding-top: 3rem;
     grid-gap: 1.2rem;
     text-align: center; }
   #about-a .bio-image {
@@ -652,7 +652,8 @@ img {
 
 #about-d {
   height: 60%;
-  background-color: #0c95ed; }
+  background-color: #0c95ed;
+  padding-bottom: 10rem; }
   #about-d .testimonials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
