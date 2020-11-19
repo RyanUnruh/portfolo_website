@@ -312,11 +312,13 @@ img {
 #about {
   // About A
   &-a {
-    height: 80vh;
+    height: 100vh;
+    padding: 5rem 15rem 0rem 15rem;
 
     .about-info {
       display: grid;
       grid-template-areas: "bioimage bio bio";
+      padding-top: 2rem;
       grid-gap: 1.2rem;
       text-align: center;
     }
