@@ -651,7 +651,7 @@ img {
     background: #ffbc00; }
 
 #about-d {
-  height: 90vh;
+  height: 60%;
   background-color: #0c95ed; }
   #about-d .testimonials {
     display: grid;
