@@ -122,34 +122,6 @@ img {
 
 // ADDED END
 // Main nav
-#main-nav {
-  padding-top: 1rem;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  li {
-    padding: 1rem 1.5rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
-
-    &:hover {
-      border-color: $medium-color;
-    }
-    &.current {
-      border-color: $main-color;
-    }
-  }
-}
 
 // .lead {
 //   padding-bottom: 5rem;
@@ -161,23 +133,50 @@ img {
 // Header
 #header {
   &-home {
+    background: $bg-image no-repeat center right / cover;
     .tent {
       height: inherit;
       background-color: rgba(42, 42, 42, 0.4);
       .container {
-        // background: $bg-image no-repeat center right / cover;
-
-        height: 100vh;
+        height: 100%;
         color: #fff;
+
+        #main-nav {
+          padding-top: 1rem;
+
+          ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+              padding: 1rem 1.5rem;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            border-bottom: 3px transparent solid;
+            padding-bottom: 0.5rem;
+            transition: border-color 0.5s;
+            &:hover {
+              color: rgb(208, 208, 208);
+            }
+
+            &.current {
+              border-color: $main-color;
+            }
+          }
+        }
 
         // Header Content
         .header-content {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          padding-top: 20%;
+          padding: 20%;
 
           h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             line-height: 1.2;
             text-align: center;
             align-content: center;
@@ -313,7 +312,6 @@ img {
   // About A
   &-a {
     height: 100%;
-    padding: 5rem 15rem 20rem 15rem;
 
     .about-info {
       display: grid;
@@ -330,30 +328,12 @@ img {
       width: 20rem;
     }
     .bio {
+      width: 70%;
       text-align: left;
       grid-area: bio;
       border-left: 3px solid $main-color;
-      padding: 0.8rem;
-      padding-top: 5em;
-    }
-
-    .award-1 {
-      grid-area: aw1;
-    }
-
-    .award-2 {
-      grid-area: aw2;
-    }
-
-    .award-3 {
-      grid-area: aw3;
-    }
-
-    .award-1 .fas,
-    .award-2 .fas,
-    .award-3 .fas {
-      color: $main-color;
-      margin: 1rem;
+      padding-left: 2rem;
+      padding-top: 4em;
     }
   }
   // About B
