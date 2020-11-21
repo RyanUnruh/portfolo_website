@@ -174,12 +174,13 @@ img {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           padding: 20%;
+          text-align: center;
+          justify-content: center;
 
           h1 {
             font-size: 3rem;
             line-height: 1.2;
-            text-align: center;
-            align-content: center;
+            // align-content: center;
           }
 
           // Scroll graphic
@@ -311,29 +312,32 @@ img {
 #about {
   // About A
   &-a {
-    height: 100%;
+    height: 90vh;
 
     .about-info {
       display: grid;
-      grid-template-areas: "bioimage bio bio";
-      padding-top: 3rem;
-      grid-gap: 1.2rem;
-      text-align: center;
-    }
-    // Grid area
-    .bio-image {
-      grid-area: bioimage;
-      border-radius: 50%;
-      height: 20rem;
-      width: 20rem;
-    }
-    .bio {
-      width: 70%;
-      text-align: left;
-      grid-area: bio;
-      border-left: 3px solid $main-color;
-      padding-left: 2rem;
-      padding-top: 4em;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      padding-top: 5rem;
+
+      // Grid area
+      div {
+        text-align: center;
+
+        .bio-image {
+          border-radius: 50%;
+          height: 50%;
+          width: 50%;
+        }
+      }
+      .bio {
+        // width: 70%;
+        text-align: left;
+        // grid-area: bio;
+        border-left: 3px solid $main-color;
+        padding-left: 1.5rem;
+      }
     }
   }
   // About B
@@ -356,35 +360,45 @@ img {
 
   // D Section
   &-d {
-    height: 60%;
-    // background-color: rgb(96, 197, 237);
-    background-color: #0c95ed;
-    // padding-bottom: 10rem;
+    background-color: #28a3ee;
+    height: 50vh;
+
+    h2 {
+      display: none;
+    }
+    .mainChar {
+      display: none;
+    }
+
+    .testim {
+      padding-bottom: 10rem;
+    }
   }
 }
 
 // Contact page
 #contact {
   height: 10%;
+
   &-info {
+    padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
     .ask {
+      text-align: left;
+      line-height: 1;
       padding-left: 5rem;
-      padding-top: 1rem;
-      // text-align: left;
-      color: #141414;
+      padding-right: 5rem;
+      font-size: 30pt;
     }
     .go {
-      font-size: 4rem;
-      padding-right: 7rem;
+      justify-content: center;
+      text-align: right;
+      line-height: 1.2;
+      font-size: 3.5rem;
+      padding-right: 5rem;
 
       a {
         color: #141414;

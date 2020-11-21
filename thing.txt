@@ -1,0 +1,119 @@
+@media (max-width: 1015px) {
+  #header {
+    &-home {
+      height: 100vh;
+      background-position: 30% 30%;
+      .tent {
+        .container {
+          // padding-top: 5rem;
+
+          // Header Content
+          .header-content {
+            h1 {
+              font-size: 3rem;
+              line-height: 1.1;
+              text-align: center;
+              align-content: center;
+            }
+
+            // Scroll graphic
+            #scroll {
+              $base: 0.1rem;
+              // height: 2vh;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    &-a {
+      height: 90vh;
+
+      .about-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+
+        // Grid area
+        div {
+          text-align: center;
+
+          .bio-image {
+            border-radius: 50%;
+            height: 50%;
+            width: 50%;
+          }
+        }
+        .bio {
+          // width: 70%;
+          text-align: left;
+          // grid-area: bio;
+          border-left: 3px solid $main-color;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+
+    &-d {
+      background-color: #28a3ee;
+      height: 50vh;
+
+      h2 {
+        display: none;
+      }
+      .mainChar {
+        display: none;
+      }
+
+      .testim {
+        padding-bottom: 10rem;
+      }
+    }
+  }
+
+  // Stack grid columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  // Contact page
+  #contact {
+    height: 10%;
+
+    &-info {
+      padding: 5rem 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      .ask {
+        padding-left: 2rem;
+        padding-right: 5rem;
+        text-align: left;
+        padding-left: 2rem;
+      }
+      .go {
+        text-align: right;
+        line-height: 0.9;
+        font-size: 3.5rem;
+
+        a {
+          color: #141414;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}
