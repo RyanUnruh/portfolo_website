@@ -43,7 +43,7 @@
 
         // Grid area
         div {
-          align-items: center;
+          // align-items: center;
           padding-bottom: 2rem;
 
           .bio-image {
@@ -53,8 +53,9 @@
           }
         }
         .bio {
-          border: none;
           text-align: center;
+          border: none;
+          padding: 0;
         }
       }
     }
@@ -198,16 +199,24 @@
   #about {
     &-a {
       height: 100vh;
+      padding-top: 1rem;
+      .section-title {
+        display: none;
+        padding-bottom: 1rem;
+        margin: 0;
+      }
 
       .about-info {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 0rem 0rem;
 
         // Grid area
         div {
+          padding-top: 2rem;
+          padding-left: 0;
           .bio-image {
             border-radius: 50%;
             height: 50%;
@@ -215,15 +224,18 @@
           }
         }
         .bio {
-          border: none;
           text-align: center;
+          padding: 0;
+
+          border: none;
         }
       }
     }
     // D Section / TESTIMONIAL
     &-d {
       background-color: #28a3ee;
-      height: 65vh;
+      height: 100vh;
+      padding-top: 7rem;
 
       .testim {
         padding-top: 2rem;
