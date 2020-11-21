@@ -223,14 +223,17 @@
     // D Section / TESTIMONIAL
     &-d {
       background-color: #28a3ee;
-      height: 60vh;
+      height: 65vh;
 
       .testim {
         padding-top: 2rem;
         padding-bottom: 0;
 
         .wrap {
-          padding: 2rem 0rem;
+          padding: 0rem 0rem;
+          span {
+            display: none;
+          }
         }
       }
     }
