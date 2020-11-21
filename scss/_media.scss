@@ -62,15 +62,13 @@
       background-color: #28a3ee;
       height: 50vh;
 
-      h2 {
-        display: none;
-      }
-      .mainChar {
-        display: none;
-      }
-
       .testim {
-        padding-bottom: 10rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+
+        .wrap {
+          padding: 1rem 0rem;
+        }
       }
     }
   }
@@ -206,12 +204,10 @@
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
-        padding-top: 5rem;
+        padding: 0;
 
         // Grid area
         div {
-          align-items: center;
-
           .bio-image {
             border-radius: 50%;
             height: 50%;
@@ -224,17 +220,18 @@
         }
       }
     }
+    // D Section / TESTIMONIAL
     &-d {
       background-color: #28a3ee;
-      height: 50vh;
-      h2 {
-        display: none;
-      }
-      .mainChar {
-        display: none;
-      }
+      height: 60vh;
 
       .testim {
+        padding-top: 2rem;
+        padding-bottom: 0;
+
+        .wrap {
+          padding: 2rem 0rem;
+        }
       }
     }
   }

@@ -611,7 +611,7 @@ img {
     justify-content: center;
     padding-top: 5rem; }
     #about-a .about-info div {
-      text-align: center; }
+      align-items: center; }
       #about-a .about-info div .bio-image {
         border-radius: 50%;
         height: 50%;
@@ -636,12 +636,11 @@ img {
 #about-d {
   background-color: #28a3ee;
   height: 50vh; }
-  #about-d h2 {
-    display: none; }
-  #about-d .mainChar {
-    display: none; }
   #about-d .testim {
-    padding-bottom: 10rem; }
+    padding-top: 2rem;
+    padding-bottom: 0; }
+    #about-d .testim .wrap {
+      padding: 0rem 0rem; }
 
 #contact {
   height: 10%; }
@@ -732,12 +731,11 @@ img {
   #about-d {
     background-color: #28a3ee;
     height: 50vh; }
-    #about-d h2 {
-      display: none; }
-    #about-d .mainChar {
-      display: none; }
     #about-d .testim {
-      padding-bottom: 10rem; }
+      padding-top: 1rem;
+      padding-bottom: 0; }
+      #about-d .testim .wrap {
+        padding: 1rem 0rem; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
@@ -811,23 +809,22 @@ img {
       grid-template-columns: repeat(1, 1fr);
       align-items: center;
       justify-content: center;
-      padding-top: 5rem; }
-      #about-a .about-info div {
-        align-items: center; }
-        #about-a .about-info div .bio-image {
-          border-radius: 50%;
-          height: 50%;
-          width: 50%; }
+      padding: 0; }
+      #about-a .about-info div .bio-image {
+        border-radius: 50%;
+        height: 50%;
+        width: 50%; }
       #about-a .about-info .bio {
         border: none;
         text-align: center; }
   #about-d {
     background-color: #28a3ee;
-    height: 50vh; }
-    #about-d h2 {
-      display: none; }
-    #about-d .mainChar {
-      display: none; }
+    height: 60vh; }
+    #about-d .testim {
+      padding-top: 2rem;
+      padding-bottom: 0; }
+      #about-d .testim .wrap {
+        padding: 2rem 0rem; }
   #contact #contact {
     height: 10%; }
     #contact #contact-info {

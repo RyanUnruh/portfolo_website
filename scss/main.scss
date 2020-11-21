@@ -323,8 +323,7 @@ img {
 
       // Grid area
       div {
-        text-align: center;
-
+        align-items: center;
         .bio-image {
           border-radius: 50%;
           height: 50%;
@@ -358,20 +357,17 @@ img {
     }
   }
 
-  // D Section
+  // D Section / TESTIMONIAL
   &-d {
     background-color: #28a3ee;
     height: 50vh;
-
-    h2 {
-      display: none;
-    }
-    .mainChar {
-      display: none;
-    }
-
     .testim {
-      padding-bottom: 10rem;
+      padding-top: 2rem;
+      padding-bottom: 0;
+
+      .wrap {
+        padding: 0rem 0rem;
+      }
     }
   }
 }
