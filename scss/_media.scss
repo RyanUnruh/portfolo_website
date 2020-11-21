@@ -1,11 +1,69 @@
 // Tablets &smaller
 @media (max-width: 800px) {
-  #header-home {
-    // height: 40rem;
+  #header {
+    &-home {
+      height: 100vh;
+      background-position: 30% 30%;
+      .tent {
+        .container {
+          // padding-top: 5rem;
 
-    .header-content {
-      padding-top: 5rem;
+          // Header Content
+          .header-content {
+            h1 {
+              font-size: 3rem;
+              line-height: 1.1;
+              text-align: center;
+              align-content: center;
+            }
+
+            // Scroll graphic
+            #scroll {
+              $base: 0.1rem;
+              // height: 2vh;
+            }
+          }
+        }
+      }
     }
+  }
+
+  #about {
+    &-a {
+      .mainChar {
+        display: none;
+      }
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio";
+      }
+    }
+
+    &-d {
+      background-color: #28a3ee;
+      height: 50vh;
+      h2 {
+        display: none;
+      }
+      .mainChar {
+        display: none;
+      }
+
+      .testim {
+      }
+    }
+  }
+
+  // Stack grid columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
@@ -54,6 +112,9 @@
     }
   }
 
+  .section-title {
+    color: $main-color;
+  }
   // Stack grid columns
   #home-a .specials,
   #home-b .stats,
@@ -87,10 +148,27 @@
   // About
   #about {
     &-a {
+      .mainChar {
+        display: none;
+      }
       .about-info {
         grid-template-areas:
           "bioimage"
           "bio";
+      }
+    }
+
+    &-d {
+      background-color: #28a3ee;
+      height: 50vh;
+      h2 {
+        display: none;
+      }
+      .mainChar {
+        display: none;
+      }
+
+      .testim {
       }
     }
   }
@@ -111,7 +189,7 @@
   }
   // Footer
   #main-footer {
-    height: 7rem;
+    height: 5rem;
 
     .footer-content {
       flex-direction: column;

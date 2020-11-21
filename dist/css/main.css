@@ -642,26 +642,7 @@ img {
 
 #about-d {
   height: 60%;
-  background-color: #0c95ed;
-  padding-bottom: 10rem; }
-  #about-d .testimonials {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5rem; }
-    #about-d .testimonials ul {
-      list-style: none;
-      margin-top: 1rem;
-      display: flex;
-      align-items: center; }
-    #about-d .testimonials p {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 0.5rem; }
-    #about-d .testimonials img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin-right: 0.5rem; }
+  background-color: #0c95ed; }
 
 #contact {
   height: 10%; }
@@ -722,8 +703,33 @@ img {
         color: #fe6b6b; }
 
 @media (max-width: 800px) {
-  #header-home .header-content {
-    padding-top: 5rem; } }
+  #header-home {
+    height: 100vh;
+    background-position: 30% 30%; }
+    #header-home .tent .container .header-content h1 {
+      font-size: 3rem;
+      line-height: 1.1;
+      text-align: center;
+      align-content: center; }
+  #about-a .mainChar {
+    display: none; }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio"; }
+  #about-d {
+    background-color: #28a3ee;
+    height: 50vh; }
+    #about-d h2 {
+      display: none; }
+    #about-d .mainChar {
+      display: none; }
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+    padding: 0; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -743,6 +749,8 @@ img {
         line-height: 1.1;
         text-align: center;
         align-content: center; }
+  .section-title {
+    color: #ffbc00; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
@@ -759,8 +767,17 @@ img {
       padding-bottom: 0; }
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
+  #about-a .mainChar {
+    display: none; }
   #about-a .about-info {
     grid-template-areas: "bioimage" "bio"; }
+  #about-d {
+    background-color: #28a3ee;
+    height: 50vh; }
+    #about-d h2 {
+      display: none; }
+    #about-d .mainChar {
+      display: none; }
   #contact-info {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -769,7 +786,7 @@ img {
     #contact-info .go {
       font-size: 2rem; }
   #main-footer {
-    height: 7rem; }
+    height: 5rem; }
     #main-footer .footer-content {
       flex-direction: column;
       padding: 1rem;
