@@ -634,11 +634,13 @@ img {
 #about-d {
   background-color: #28a3ee;
   height: 50vh; }
-  #about-d .testim {
-    padding-top: 2rem;
-    padding-bottom: 0; }
-    #about-d .testim .wrap {
-      padding-bottom: 2rem; }
+  #about-d .container {
+    padding: 0rem 10rem; }
+    #about-d .container .testim {
+      padding-top: 2rem;
+      padding-bottom: 0; }
+      #about-d .container .testim .wrap {
+        padding-bottom: 2rem; }
 
 #contact {
   height: 10%; }
@@ -735,11 +737,13 @@ img {
   #about-d {
     background-color: #28a3ee;
     height: 50vh; }
-    #about-d .testim {
-      padding-top: 1rem;
-      padding-bottom: 0; }
-      #about-d .testim .wrap {
-        padding: 1rem 0rem; }
+    #about-d .container {
+      padding: 0rem 3rem; }
+      #about-d .container .testim {
+        padding-top: 1rem;
+        padding-bottom: 0; }
+        #about-d .container .testim .wrap {
+          padding: 1rem 0rem; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,

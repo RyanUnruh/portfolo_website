@@ -69,13 +69,15 @@
     &-d {
       background-color: #28a3ee;
       height: 50vh;
+      .container {
+        padding: 0rem 3rem;
+        .testim {
+          padding-top: 1rem;
+          padding-bottom: 0;
 
-      .testim {
-        padding-top: 1rem;
-        padding-bottom: 0;
-
-        .wrap {
-          padding: 1rem 0rem;
+          .wrap {
+            padding: 1rem 0rem;
+          }
         }
       }
     }

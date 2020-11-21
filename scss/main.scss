@@ -361,12 +361,15 @@ img {
   &-d {
     background-color: #28a3ee;
     height: 50vh;
-    .testim {
-      padding-top: 2rem;
-      padding-bottom: 0;
+    .container {
+      padding: 0rem 10rem;
+      .testim {
+        padding-top: 2rem;
+        padding-bottom: 0;
 
-      .wrap {
-        padding-bottom: 2rem;
+        .wrap {
+          padding-bottom: 2rem;
+        }
       }
     }
   }
