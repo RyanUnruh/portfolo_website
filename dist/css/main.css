@@ -199,7 +199,6 @@ input[class^="btn-"]:hover {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  background-color: #ba8686;
   margin: auto;
   padding: 4rem;
   max-width: 100%;
@@ -259,7 +258,6 @@ input[class^="btn-"]:hover {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
-    background-color: #ba8686;
     margin: auto;
     padding: 4rem;
     max-width: 100%;
