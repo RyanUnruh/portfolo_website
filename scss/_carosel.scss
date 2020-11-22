@@ -35,7 +35,6 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
- 
 
   margin: auto;
   padding: 4rem;
@@ -110,7 +109,6 @@
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
-   
 
     margin: auto;
     padding: 4rem;
@@ -133,7 +131,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .arrow1,
   .light .arrow1 {
     background-size: 10px;

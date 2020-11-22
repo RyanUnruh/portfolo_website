@@ -271,7 +271,7 @@ input[class^="btn-"]:hover {
     padding-bottom: 1rem;
     text-align: left; } }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .arrow1,
   .light .arrow1 {
     background-size: 10px;
