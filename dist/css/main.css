@@ -195,17 +195,22 @@ input[class^="btn-"]:hover {
 
 /* Modal Content */
 .modal-content {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: #ba8686;
   margin: auto;
-  padding-top: 10rem;
-  padding-right: 30rem;
-  max-width: 1200px; }
+  padding: 4rem;
+  max-width: 100%;
+  height: 80vh; }
 
 .carousel-wrapper {
-  position: absolute;
-  height: 400px;
-  width: 600px;
-  padding-right: 10rem; }
+  position: relative;
+  width: 100%;
+  padding-top: 65%;
+  padding-right: 10rem;
+  margin: 0 auto; }
 
 .carousel-item {
   position: absolute;
@@ -237,6 +242,36 @@ input[class^="btn-"]:hover {
 
 .light {
   color: white; }
+
+.projInfo {
+  display: flex;
+  position: relative;
+  text-align: left;
+  justify-content: center;
+  padding-left: 5rem; }
+
+.projInfo p {
+  padding-bottom: 2rem; }
+
+@media (max-width: 800px) {
+  .modal-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #ba8686;
+    margin: auto;
+    padding: 4rem;
+    max-width: 100%;
+    height: 90vh; }
+  .projInfo {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 0rem; }
+  .projInfo p {
+    padding-bottom: 1rem;
+    text-align: left; } }
 
 @media (max-width: 480px) {
   .arrow1,
@@ -407,16 +442,6 @@ input[class^="btn-"]:hover {
 #Titem-3:target ~ .Titem-3 {
   z-index: 3;
   opacity: 1; }
-
-.projInfo {
-  position: absolute;
-  display: flex;
-  text-align: left;
-  padding-left: 45rem;
-  padding-top: 8rem; }
-
-.projInfo p {
-  padding-bottom: 2rem; }
 
 .pimg1 {
   background-image: url("../img/image1.jpg"); }
