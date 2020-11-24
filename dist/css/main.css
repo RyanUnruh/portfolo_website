@@ -807,7 +807,7 @@ img {
       display: none; }
   #header-home {
     height: 100vh;
-    background-position: 30% 30%; }
+    background-position: 100%; }
     #header-home .tent .container {
       padding: 5rem 2rem 0rem 2rem; }
       #header-home .tent .container .header-content h1 {
