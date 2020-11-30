@@ -882,7 +882,6 @@ img {
       height: 10%; }
       #contact #contact-info {
         width: 100%;
-        background-color: #fff;
         padding: 5rem 0rem 0rem 0rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
