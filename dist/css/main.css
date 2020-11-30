@@ -541,18 +541,19 @@ img {
       #header-home .tent .container .header-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 20%;
+        padding: 30vh 20% 0% 20%;
+        height: 100vh;
         text-align: center;
         justify-content: center; }
         #header-home .tent .container .header-content h1 {
           font-size: 3rem;
           line-height: 1.2; }
         #header-home .tent .container .header-content #scroll {
+          padding: 0rem 0rem 10rem 0rem;
+          margin: 0;
           display: flex;
           justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 20vh; }
+          align-items: center; }
           #header-home .tent .container .header-content #scroll .chevron {
             position: absolute;
             width: 2.1rem;
@@ -810,8 +811,9 @@ img {
   #header-home {
     height: 100vh;
     background-position: 30% 30%; }
-    #header-home .tent .container {
-      padding: 5rem 2rem 0rem 2rem; }
+    #header-home .tent .container .header-content {
+      padding: 20vh 5% 0% 5%;
+      height: 100vh; }
       #header-home .tent .container .header-content h1 {
         font-size: 25pt;
         line-height: 1.2;
