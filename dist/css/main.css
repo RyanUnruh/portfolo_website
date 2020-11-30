@@ -819,6 +819,8 @@ img {
         line-height: 1.2;
         text-align: center;
         align-content: center; }
+      #header-home .tent .container .header-content #scroll {
+        height: 1%; }
   .section-title {
     color: #ffbc00; }
   #home-a .specials,
