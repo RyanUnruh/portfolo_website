@@ -149,7 +149,8 @@ function fadeOutEffect() {
 // window.addEventListener("load", (event) => {
 //   fadeOutEffect();
 // });
-
 window.onload = (event) => {
-  fadeOutEffect();
+  setTimeout(function () {
+    fadeOutEffect();
+  }, 2000);
 };
