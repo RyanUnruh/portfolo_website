@@ -16,6 +16,8 @@ $(function () {
   });
 });
 
+
+
 // Testimonial
 // vars
 ("use strict");
@@ -125,3 +127,10 @@ window.onload = function () {
     }
   });
 };
+
+
+// Preloader
+   $(window).load(function () {
+     // Animate loader off screen
+     $(".se-pre-con").fadeOut("slow");
+   });
