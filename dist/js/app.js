@@ -146,6 +146,10 @@ function fadeOutEffect() {
   }, 20);
 }
 
-window.addEventListener("load", (event) => {
+// window.addEventListener("load", (event) => {
+//   fadeOutEffect();
+// });
+
+window.onload = (event) => {
   fadeOutEffect();
-});
+};
