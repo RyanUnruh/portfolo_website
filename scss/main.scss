@@ -94,8 +94,6 @@ img {
   height: 50px;
 }
 
-
-
 // ADDED START
 
 // // Animation type
@@ -368,12 +366,15 @@ img {
   // D Section / TESTIMONIAL
   &-d {
     background-color: #28a3ee;
-    height: 50vh;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .container {
       padding: 0rem 10rem;
       .testim {
-        padding-top: 2rem;
-        padding-bottom: 0;
+        // padding-top: 2rem;
+        padding-bottom: 3rem;
 
         .wrap {
           padding-bottom: 2rem;

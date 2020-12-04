@@ -18,6 +18,7 @@ $(function () {
 
 // Testimonial
 // vars
+
 ("use strict");
 var testim = document.getElementById("testim"),
   testimDots = Array.prototype.slice.call(
@@ -126,31 +127,4 @@ window.onload = function () {
   });
 };
 
-// // Preloader
-// $(window).load(function () {
-//   // Animate loader off screen
-//   $(".se-pre-con").fadeOut("slow");
-// });
 
-function fadeOutEffect() {
-  var fadeTarget = document.getElementById("target");
-  var fadeEffect = setInterval(function () {
-    if (!fadeTarget.style.opacity) {
-      fadeTarget.style.opacity = 1;
-    }
-    if (fadeTarget.style.opacity > 0) {
-      fadeTarget.style.opacity -= 0.08;
-    } else {
-      clearInterval(fadeEffect);
-    }
-  }, 20);
-}
-
-// window.addEventListener("load", (event) => {
-//   fadeOutEffect();
-// });
-window.onload = (event) => {
-  setTimeout(function () {
-    fadeOutEffect();
-  }, 2000);
-};
