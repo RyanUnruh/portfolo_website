@@ -868,9 +868,9 @@ img {
   #about-d {
     background-color: #28a3ee;
     height: 100vh;
-    padding-top: 7rem; }
+    padding-top: 0rem; }
     #about-d .testim {
-      padding-top: 2rem;
+      padding-top: 0rem;
       padding-bottom: 0; }
       #about-d .testim .wrap {
         padding: 0rem 0rem; }
