@@ -66,7 +66,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background: #141414;
+  background: $col-1;
 }
 
 a {
@@ -319,6 +319,8 @@ img {
   // About A
   &-a {
     height: 90vh;
+    color: var(set-text-color);
+    background-color: $col-1;
 
     .about-info {
       display: grid;
@@ -365,22 +367,32 @@ img {
 
   // D Section / TESTIMONIAL
   &-d {
-    background-color: #28a3ee;
-    height: 40vh;
+    background-color: #141e55;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     .container {
       padding: 0rem 10rem;
-      .testim {
-        // padding-top: 2rem;
-        padding-bottom: 3rem;
+      // .testim {
+      //   padding-top: 0rem;
+      //   padding-bottom: 0rem;
 
-        .wrap {
-          padding-bottom: 2rem;
-        }
-      }
+      //   .wrap {
+      //     padding-bottom: 2rem;
+      //   }
+      // }
     }
+  }
+}
+
+#work-a {
+  background-color: #f6f6f6;
+  .section-title {
+    color: #141e55;
+  }
+  .container {
+    padding: 0rem 2em;
   }
 }
 
@@ -395,6 +407,7 @@ img {
     align-items: center;
     justify-content: center;
     .ask {
+      color: $col-1;
       text-align: left;
       line-height: 1;
       padding: 9rem 7rem 9rem 0rem;
@@ -410,7 +423,7 @@ img {
       padding-right: 5rem;
 
       a {
-        color: #141414;
+        color: $col-1;
         &:hover {
           color: $main-color;
         }
@@ -421,7 +434,7 @@ img {
 
 // Main footer
 #main-footer {
-  background: $dark-color;
+  background: $col-1;
   color: #fff;
   height: 5rem;
 

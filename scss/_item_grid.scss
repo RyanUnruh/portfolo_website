@@ -8,16 +8,16 @@
   .item {
     box-shadow: 0 5px 10px 0 rgGrid size edit to work pageba(0, 0, 0, 0.3);
     position: relative;
-    background: rgb(42, 172, 252);
+    background: $col-1;
     overflow: hidden;
-    border-radius: 1%;
+    border-radius: 3%;
 
     &:after {
       content: "";
       position: absolute;
       display: block;
       background: inherit;
-      opacity: 0.9;
+      // opacity: 0.4;
       top: 0;
       left: 0;
       height: 100%;
@@ -34,7 +34,7 @@
       transform: scale(1.2);
     }
     &:hover {
-      background: rgb(31, 31, 31);
+      background: rgba(20, 30, 85, 0.8);
     }
     // Bring in text on hover
     &:hover &-text {

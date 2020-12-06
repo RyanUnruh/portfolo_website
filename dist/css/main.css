@@ -31,11 +31,11 @@ input[class^="btn-"]:hover {
 
 .bg-main {
   background: #ffbc00;
-  color: #fff; }
+  color: #f6f6f6; }
 
 .bg-dark {
   background: #141414;
-  color: #fff; }
+  color: #f6f6f6; }
 
 .bg-light {
   background: #f4f4f4;
@@ -101,15 +101,14 @@ input[class^="btn-"]:hover {
   .items .item {
     box-shadow: 0 5px 10px 0 rgGrid size edit to work pageba(0, 0, 0, 0.3);
     position: relative;
-    background: #2aacfc;
+    background: #141e55;
     overflow: hidden;
-    border-radius: 1%; }
+    border-radius: 3%; }
     .items .item:after {
       content: "";
       position: absolute;
       display: block;
       background: inherit;
-      opacity: 0.9;
       top: 0;
       left: 0;
       height: 100%;
@@ -119,7 +118,7 @@ input[class^="btn-"]:hover {
     .items .item:hover .items .item-image {
       transform: scale(1.2); }
     .items .item:hover {
-      background: #1f1f1f; }
+      background: rgba(20, 30, 85, 0.8); }
     .items .item:hover .items .item-text {
       opacity: 1;
       transform: translateY(0); }
@@ -493,7 +492,7 @@ input[class^="btn-"]:hover {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background: #141414; }
+  background: #141e55; }
 
 a {
   text-decoration: none;
@@ -627,7 +626,9 @@ img {
       background: #ccc; }
 
 #about-a {
-  height: 90vh; }
+  height: 90vh;
+  color: var(set-text-color);
+  background-color: #141e55; }
   #about-a .about-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -658,17 +659,20 @@ img {
     background: #ffbc00; }
 
 #about-d {
-  background-color: #28a3ee;
-  height: 40vh;
+  background-color: #141e55;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center; }
   #about-d .container {
     padding: 0rem 10rem; }
-    #about-d .container .testim {
-      padding-bottom: 3rem; }
-      #about-d .container .testim .wrap {
-        padding-bottom: 2rem; }
+
+#work-a {
+  background-color: #f6f6f6; }
+  #work-a .section-title {
+    color: #141e55; }
+  #work-a .container {
+    padding: 0rem 2em; }
 
 #contact {
   height: 10%;
@@ -680,6 +684,7 @@ img {
     align-items: center;
     justify-content: center; }
     #contact-info .ask {
+      color: #141e55;
       text-align: left;
       line-height: 1;
       padding: 9rem 7rem 9rem 0rem;
@@ -691,12 +696,12 @@ img {
       font-size: 3.5rem;
       padding-right: 5rem; }
       #contact-info .go a {
-        color: #141414; }
+        color: #141e55; }
         #contact-info .go a:hover {
           color: #ffbc00; }
 
 #main-footer {
-  background: #141414;
+  background: #141e55;
   color: #fff;
   height: 5rem; }
   #main-footer .footer-content {
@@ -763,7 +768,7 @@ img {
         border: none;
         padding: 0; }
   #about-d {
-    background-color: #28a3ee;
+    background-color: #141e55;
     height: 50vh; }
     #about-d .container {
       padding: 0rem 3rem; }
@@ -789,6 +794,7 @@ img {
       align-items: center;
       justify-content: center; }
       #contact-info .ask {
+        color: #141e55;
         padding-left: 2rem;
         padding-right: 5rem;
         text-align: left;
@@ -798,7 +804,7 @@ img {
         line-height: 0.9;
         font-size: 3.5rem; }
         #contact-info .go a {
-          color: #141414; }
+          color: #141e55; }
           #contact-info .go a:hover {
             color: #ffbc00; } }
 
@@ -866,7 +872,7 @@ img {
         padding: 0;
         border: none; }
   #about-d {
-    background-color: #28a3ee;
+    background-color: #141e55;
     height: 100vh;
     padding-top: 0rem; }
     #about-d .testim {

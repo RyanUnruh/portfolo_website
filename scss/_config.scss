@@ -1,6 +1,8 @@
 // variables
 
 $website-width: 1500px;
+$col-1: #141e55;
+$col-2: #f6f6f6;
 $main-color: #ffbc00;
 $myMain-color: #00aeef;
 $light-color: #f4f4f4;
@@ -12,6 +14,6 @@ $bg-image: url("../img/image1.jpg");
   @if (lightness($color) > 50) {
     @return #000;
   } @else {
-    @return #fff;
+    @return #f6f6f6;
   }
 }
