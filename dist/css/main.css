@@ -697,8 +697,8 @@ img {
       padding-right: 5rem; }
       #contact-info .go a h2 {
         color: #141e55; }
-      #contact-info .go a:hover {
-        color: #ffbc00; }
+        #contact-info .go a h2:hover {
+          color: #ffbc00; }
 
 #main-footer {
   background: #141e55;
