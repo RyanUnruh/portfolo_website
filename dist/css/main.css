@@ -695,14 +695,14 @@ img {
       line-height: 1.2;
       font-size: 3.5rem;
       padding-right: 5rem; }
-      #contact-info .go a {
+      #contact-info .go a h2 {
         color: #141e55; }
-        #contact-info .go a:hover {
-          color: #ffbc00; }
+      #contact-info .go a:hover {
+        color: #ffbc00; }
 
 #main-footer {
   background: #141e55;
-  color: #fff;
+  color: #f6f6f6;
   height: 5rem; }
   #main-footer .footer-content {
     display: flex;
@@ -710,7 +710,7 @@ img {
     height: 5rem;
     align-items: center; }
     #main-footer .footer-content .social .fa-github {
-      color: #fff;
+      color: #f6f6f6;
       margin-right: 1rem;
       line-height: 20px;
       text-align: center;
@@ -718,7 +718,7 @@ img {
       #main-footer .footer-content .social .fa-github:hover {
         color: #3c3c3c; }
     #main-footer .footer-content .social .fa-linkedin {
-      color: #fff;
+      color: #f6f6f6;
       margin-right: 1rem;
       line-height: 20px;
       text-align: center;
@@ -726,7 +726,7 @@ img {
       #main-footer .footer-content .social .fa-linkedin:hover {
         color: #4ac0ff; }
     #main-footer .footer-content .social .fa-instagram {
-      color: #fff;
+      color: #f6f6f6;
       margin-right: 1rem;
       line-height: 20px;
       text-align: center;
@@ -794,7 +794,6 @@ img {
       align-items: center;
       justify-content: center; }
       #contact-info .ask {
-        color: #141e55;
         padding-left: 2rem;
         padding-right: 5rem;
         text-align: left;
@@ -803,10 +802,8 @@ img {
         text-align: right;
         line-height: 0.9;
         font-size: 3.5rem; }
-        #contact-info .go a {
-          color: #141e55; }
-          #contact-info .go a:hover {
-            color: #ffbc00; } }
+        #contact-info .go a:hover {
+          color: #ffbc00; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -848,7 +845,7 @@ img {
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
   #about-a {
-    height: 100vh;
+    height: auto;
     padding-top: 1rem; }
     #about-a .section-title {
       display: none;
@@ -869,8 +866,10 @@ img {
           width: 50%; }
       #about-a .about-info .bio {
         text-align: center;
-        padding: 0;
+        padding: 0rem;
         border: none; }
+        #about-a .about-info .bio span {
+          font-size: 9pt; }
   #about-d {
     background-color: #141e55;
     height: 100vh;
