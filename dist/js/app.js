@@ -1,6 +1,6 @@
 // Top Section fade on scroll
 
-$(function () {
+let fadeScroll = $(function () {
   var documentEl = $(document),
     fadeElem = $(".fade-scroll");
 
@@ -16,6 +16,25 @@ $(function () {
   });
 });
 
+function fadeOutEffect() {
+  var fadeTarget = document.getElementById("target");
+  var fadeEffect = setInterval(function () {
+    if (!fadeTarget.style.opacity) {
+      fadeTarget.style.opacity = 1;
+    }
+    if (fadeTarget.style.opacity > 0) {
+      fadeTarget.style.opacity -= 0.08;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 20);
+}
+
+window.addEventListener("load", (event) => {
+  setTimeout(function () {
+    fadeOutEffect();
+  }, 2000);
+});
 // Testimonial
 // vars
 
@@ -37,7 +56,8 @@ var testim = document.getElementById("testim"),
   touchEndPos,
   touchPosDiff,
   ignoreTouch = 30;
-window.onload = function () {
+
+let testimonial = function () {
   // Testim Script
   function playSlide(slide) {
     for (var k = 0; k < testimDots.length; k++) {
@@ -126,3 +146,6 @@ window.onload = function () {
     }
   });
 };
+
+testimonial();
+fadeScroll();

@@ -1,8 +1,5 @@
+export { fadeOutEffect };
 // Preloader
-// $(window).load(function () {
-//   // Animate loader off screen
-//   $(".se-pre-con").fadeOut("slow");
-// });
 
 function fadeOutEffect() {
   var fadeTarget = document.getElementById("target");
@@ -23,4 +20,9 @@ window.addEventListener("load", (event) => {
     fadeOutEffect();
   }, 2000);
 });
+
 // window.onload = (event) => {};
+// $(window).load(function () {
+//   // Animate loader off screen
+//   $(".se-pre-con").fadeOut("slow");
+// });
