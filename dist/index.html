@@ -2,29 +2,7 @@
 <html lang="en">
   <head>
     
-    <style>
-      /* Paste this css to your style sheet file or under head tag */
-      /* This only works with JavaScript, 
-if it's not present, don't show loader */
-      .no-js #loader {
-        display: none;
-      }
-      .js #loader {
-        display: block;
-        position: absolute;
-        left: 100px;
-        top: 0;
-      }
-      .se-pre-con {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background: url(./img/simple-pre-loader/images/loader-128x/Preloader_3.gif) center no-repeat #fff;
-      }
-    </style>
+  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -47,12 +25,14 @@ if it's not present, don't show loader */
     
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/main.css" />
+    
     <title>Ryan Unruh | Developer</title>
   </head>
   <body>
+    
 
-  
     <header id="header-home" class="fade-scroll pimg1">
+   
       <div class='tent'>
         <div class="container">
      
@@ -164,7 +144,7 @@ if it's not present, don't show loader */
        
         <!-- <p class="lead">Check out some of my projects</p> -->
         <div class="items">
-          <div onclick="openModal();currentSlide(1)" class="item">
+          <div onclick="openModal('myModal');currentSlide(1)" class="item">
             <div class="item-image">
               <img src="img/items/item1.png" alt="" />
             </div>
@@ -176,7 +156,7 @@ if it's not present, don't show loader */
             </div>
           </div>
           
-          <div onclick="openModal2();currentSlide(1)"class="item">
+          <div onclick="openModal('myModal2');currentSlide(1)"class="item">
             <div class="item-image">
               <img src="img/work/monsters/1.png" alt="" />
             </div>
@@ -187,7 +167,7 @@ if it's not present, don't show loader */
               </div>
             </div>
           </div>
-          <div onclick="openModal3();currentSlide(1)" class="item">
+          <div onclick="openModal('myModal3');currentSlide(1)" class="item">
             <div class="item-image">
               <img src="img/work/calorie/3.png" alt="" />
             </div>
@@ -198,7 +178,7 @@ if it's not present, don't show loader */
               </div>
             </div>
           </div>
-          <div class="item" onclick="openModal4();currentSlide(1)">
+          <div class="item" onclick="openModal('myModal4');currentSlide(1)">
             <div class="item-image">
               <img src="img/work/github/1.png" alt="" />
             </div>
@@ -209,7 +189,7 @@ if it's not present, don't show loader */
               </div>
             </div>
           </div>
-          <div class="item" onclick="openModal5();currentSlide(1)" >
+          <div class="item" onclick="openModal('myModal5');currentSlide(1)" >
             <div class="item-image">
               <img src="img/work/chuckNoris/2.png" alt="" />
             </div>
@@ -220,7 +200,7 @@ if it's not present, don't show loader */
               </div>
             </div>
           </div>
-          <div class="item" onclick="openModal6();currentSlide(1)">
+          <div class="item" onclick="openModal('myModal6');currentSlide(1)">
             <div class="item-image">
               <img src="img/work/tictac/1.png" alt="" />
             </div>
@@ -268,7 +248,7 @@ if it's not present, don't show loader */
 
         <!-- Modal 1 -->
         <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
           
           <div class="modal-content">
                         
@@ -323,7 +303,7 @@ if it's not present, don't show loader */
         </div>
         <!-- Modal 2 -->
         <div id="myModal2" class="modal">
-          <span class="close cursor" onclick="closeModal2()">&times;</span>
+          <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
           <div class="modal-content">
 
             <div class="carousel-wrapper">
@@ -360,7 +340,7 @@ if it's not present, don't show loader */
 
         <!-- Modal 3 -->
         <div id="myModal3" class="modal">
-          <span class="close cursor" onclick="closeModal3()">&times;</span>
+          <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
           <div class="modal-content">
 
             <div class="carousel-wrapper">
@@ -409,7 +389,7 @@ if it's not present, don't show loader */
 
         <!-- Modal 4 -->
         <div id="myModal4" class="modal">
-          <span class="close cursor" onclick="closeModal4()">&times;</span>
+          <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
           <div class="modal-content">
 
             <div class="carousel-wrapper">
@@ -453,7 +433,7 @@ if it's not present, don't show loader */
         </div>
         <!-- Modal 5 -->
         <div id="myModal5" class="modal">
-          <span class="close cursor" onclick="closeModal5()">&times;</span>
+          <span class="close cursor" onclick="closeModal('myModal5')">&times;</span>
           <div class="modal-content">
 
             <div class="carousel-wrapper">
@@ -497,7 +477,7 @@ if it's not present, don't show loader */
         </div>
         <!-- Modal 6 -->
         <div id="myModal6" class="modal">
-          <span class="close cursor" onclick="closeModal6()">&times;</span>
+          <span class="close cursor" onclick="closeModal('myModal6')">&times;</span>
           <div class="modal-content">
 
             <div class="carousel-wrapper">
@@ -644,8 +624,8 @@ if it's not present, don't show loader */
     </footer>
 
 
-    <script src="./js/modal.js"></script>
     <script src="./js/app.js"></script>
-        <!-- <div id="target" class="se-pre-con"></div> -->
+    <!-- <script src="./js/modal.js"></script> -->
+        
   </body>
 </html>

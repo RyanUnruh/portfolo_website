@@ -1,3 +1,12 @@
+function openModal(name) {
+  document.getElementById(`${name}`).style.display = "block";
+}
+
+// Close the Modal1
+function closeModal(name) {
+  document.getElementById(`${name}`).style.display = "none";
+}
+
 // Top Section fade on scroll
 
 let fadeScroll = $(function () {
@@ -14,27 +23,6 @@ let fadeScroll = $(function () {
         $this.css("opacity", 1 - (currScrollPos - elemOffsetTop) / 400);
     });
   });
-});
-
-// Preloader
-function fadeOutEffect() {
-  var fadeTarget = document.getElementById("target");
-  var fadeEffect = setInterval(function () {
-    if (!fadeTarget.style.opacity) {
-      fadeTarget.style.opacity = 1;
-    }
-    if (fadeTarget.style.opacity > 0) {
-      fadeTarget.style.opacity -= 0.08;
-    } else {
-      clearInterval(fadeEffect);
-    }
-  }, 20);
-}
-
-window.addEventListener("load", (event) => {
-  setTimeout(function () {
-    fadeOutEffect();
-  }, 2000);
 });
 
 // Testimonial
@@ -150,3 +138,5 @@ let testimonial = function () {
 
 testimonial();
 fadeScroll();
+// Modals
+// Open the Modal 1

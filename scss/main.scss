@@ -94,42 +94,10 @@ img {
   height: 50px;
 }
 
-// ADDED START
-
-// // Animation type
-// .animated {
-//   -webkit-animation-duration: 1s;
-//   animation-duration: 1s;
-//   -webkit-animation-fill-mode: both;
-//   animation-fill-mode: both;
-// }
-
-// @keyframes flash {
-//   0%,
-//   50%,
-//   100% {
-//     opacity: 1;
-//   }
-//   25%,
-//   75% {
-//     opacity: 0;
-//   }
-// }
-
-// .flash {
-//   animation-name: flash;
-// }
-
-// ADDED END
-// Main nav
-
-// .lead {
-//   padding-bottom: 5rem;
-// }
-
 .mainChar {
   color: $main-color;
 }
+
 // Header
 #header {
   &-home {
