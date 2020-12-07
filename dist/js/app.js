@@ -16,6 +16,7 @@ let fadeScroll = $(function () {
   });
 });
 
+// Preloader
 function fadeOutEffect() {
   var fadeTarget = document.getElementById("target");
   var fadeEffect = setInterval(function () {
@@ -35,8 +36,8 @@ window.addEventListener("load", (event) => {
     fadeOutEffect();
   }, 2000);
 });
+
 // Testimonial
-// vars
 
 ("use strict");
 var testim = document.getElementById("testim"),
