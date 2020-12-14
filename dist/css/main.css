@@ -638,7 +638,7 @@ img {
     #about-a .about-info div {
       align-items: center; }
       #about-a .about-info div .bio-image {
-        border: 2px solid #f6f6f6;
+        border: 4px solid #f6f6f6;
         border-radius: 50%;
         height: 50%;
         width: 50%; }
