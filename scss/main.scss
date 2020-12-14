@@ -301,6 +301,7 @@ img {
       div {
         align-items: center;
         .bio-image {
+          border: 2px solid$col-2;
           border-radius: 50%;
           height: 50%;
           width: 50%;
